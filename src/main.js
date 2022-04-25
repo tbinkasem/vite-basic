@@ -5,7 +5,7 @@ import { setupLayouts } from 'virtual:generated-layouts'
 
 import 'windi.css'
 
-import App from './App.vue'
+import App from './pages/index.vue'
 
 const routes = setupLayouts(generatedRoutes)
 
