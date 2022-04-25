@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <h1>TEERA BINKASEM</h1>
   </div>
 </template>
