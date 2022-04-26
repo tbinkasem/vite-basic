@@ -1,26 +1,28 @@
 <template>
-  <div class="test1">
-    NAME: {{ name }} <br>
-    HBD: <span>{{ hbd }}</span>
+  <div class="text-bold" :title="age">
+    Hello {{ name }}
   </div>
+  <div>Hello <span v-html="name"></span></div>
+  <button :disabled="lock">
+    test <b>{{ name }}</b>
+  </button>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      name: 'Teera Binkasem',
-      age: 22,
-      hbd: '06-01-2002',
+      name: 'Somsak',
+      name2: '<i onclick="alert(\'test\')">Somsak</i> Sae-Lim',
+      age: 25,
+      lock: false,
     }
   },
 }
-
 </script>
 
 <style>
-  .test1{
-    font-weight: bold;
-    color:blueviolet;
-  }
+.text-bold {
+  font-weight: bold;
+}
 </style>
